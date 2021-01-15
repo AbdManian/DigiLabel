@@ -26,3 +26,8 @@ Command line:
       -h, --help            show this help message and exit
       --output OUTPUTFILE, -o OUTPUTFILE
                             Output pdf file
+                            
+                            
+                            
+                            
+ابزار تبدیل فایل‌های لیبل دیجیکالا به یک فایل پی‌دی‌اف در قطع آ‌چهار! برای چاپ در پرینتر‌های معمولی
