@@ -1,7 +1,7 @@
 # DigiLabel
 Convert multi-page label files into single pdf file
 
-## motivation
+## Motivation
 Originally designed for printing DigiKala label files with ordinary laserjet printers!
 
 ## Requirements
@@ -27,7 +27,7 @@ Command line:
       --output OUTPUTFILE, -o OUTPUTFILE
                             Output pdf file
                             
-                            
+
                             
                             
 ابزار تبدیل فایل‌های لیبل دیجیکالا به یک فایل پی‌دی‌اف در قطع آ‌چهار! برای چاپ در پرینتر‌های معمولی
