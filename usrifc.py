@@ -12,14 +12,18 @@ class DigiLabelApplication(tk.Frame):
         self.columnconfigure(1, weight=1)
         self.rowconfigure(1, weight=1)
 
-        button_load_label_files = tk.Button(self, text="Add Labels", command=self.cmd_load_files)
+        button_load_label_files = tk.Button(
+            self, text="Add Labels", command=self.cmd_load_files)
         button_load_label_files.grid(row=0, column=0)
-        button_clear_label_files = tk.Button(self, text="Clear Files", command=self.cmd_clear_files)
+        button_clear_label_files = tk.Button(
+            self, text="Clear Files", command=self.cmd_clear_files)
         button_clear_label_files.grid(row=0, column=2)
-        button_generate_file = tk.Button(self, text="Generate", command=self.cmd_generate_files)
+        button_generate_file = tk.Button(
+            self, text="Generate", command=self.cmd_generate_files)
         button_generate_file.grid(row=0, column=1, sticky=tk.EW)
         self.listbox_file_list = tk.Listbox(self)
-        self.listbox_file_list.grid(row=1, column=0, columnspan=3, sticky=tk.NSEW)
+        self.listbox_file_list.grid(
+            row=1, column=0, columnspan=3, sticky=tk.NSEW)
 
         sizes_frame = tk.Frame(self)
         sizes_frame.grid(row=2, column=0, columnspan=3, sticky=tk.NSEW)
@@ -56,7 +60,7 @@ class DigiLabelApplication(tk.Frame):
         if not output_file:
             return
 
-        labelmerger.do_label_mergs(
+        labelmerger.do_label_merge(
             output_file,
             self.label_file_list,
             self.create_print_size_structure()
@@ -91,7 +95,8 @@ class DigiLabelApplication(tk.Frame):
         ]
         var_dict = dict()
         for rindex, (text, name, default_value) in enumerate(size_entry_list):
-            dvar = self.create_size_entry_widgets(target_frame, rindex+1, text)
+            dvar = self.create_size_entry_widgets(
+                target_frame, rindex + 1, text)
             dvar.set(default_value)
             var_dict[name] = dvar
         return var_dict

@@ -26,7 +26,11 @@ class PrintMargins:
         return f"Margins: {self.top} {self.right} {self.bottom} {self.left}"
 
     def get_decimal_pts(self):
-        return decimal_pts(self.top), decimal_pts(self.right), decimal_pts(self.bottom), decimal_pts(self.left)
+        return decimal_pts(
+            self.top), decimal_pts(
+            self.right), decimal_pts(
+            self.bottom), decimal_pts(
+                self.left)
 
 
 class PageSize:
@@ -100,7 +104,7 @@ if __name__ == '__main__':
     label_page = PageSize(12, 10, margins)
     print_page = PageSize(80, 15, PrintMargins(10, 0, 3, 0))
     dut = LabelPrintSize(print_page, label_page)
-    print(dut.validate_size(), dut.get_num_labels_in_page(), print_page.get_vertical_print_area())
-
-
-
+    print(
+        dut.validate_size(),
+        dut.get_num_labels_in_page(),
+        print_page.get_vertical_print_area())
