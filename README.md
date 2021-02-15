@@ -26,11 +26,24 @@ Command line:
       -h, --help            show this help message and exit
       --output OUTPUTFILE, -o OUTPUTFILE
                             Output pdf file
-                            
+
+For graphical user interface call `usrifc.py'
+   
+    python usrifc.py 
+
+
+## Build for MS Windows
+Single executable file can be build using `PyInstaller`.
+Simply call `build_exe.bat`
+
+![GUI](screenshot.png "Tk based user interface")
 
                             
 <div dir=rtl align="right">     
     
 ابزار تبدیل فایل‌های لیبل دیجیکالا به یک فایل پی‌دی‌اف در قطع آ‌چهار! برای چاپ در پرینتر‌های معمولی
 
+با این ابزار به عنوان مثال می‌توانید لیبل‌های دیجی‌کالا (یا هر نوع لیبل دیگری) را با پرینتر‌های معمولی چاپ کنید. 
+فایل‌های PDF لیبل‌ها را داخل برنامه لود کرده و فایل A4 خروجی را ذخیره کنید. این فایل PDF رو با چاپگر بدون 
+تغییر اندازه و حاشیه بر روی کاغذ لیبل چاپ کنید.
 </div>
